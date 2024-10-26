@@ -1,0 +1,78 @@
+.footer {
+  padding: 40px 20px;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+  gap: 100px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  max-width: 250px;
+}
+
+.logo {
+  font-size: 30px; /* Aumente aqui para o título/logo */
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 45px;
+}
+
+.footer-logo p {
+  color: #aaa;
+  font-size: 16px; /* Aumente aqui para o texto de descrição */
+  margin-top: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 45px; /* Aumente aqui para o tamanho dos ícones de redes sociais */
+  transition: color 0.3s;
+}
+
+.footer-info-sections {
+  display: flex;
+  gap: 150px;
+}
+
+.info-section h4 {
+  color: #fff;
+  font-size: 30px; /* Aumente aqui para o tamanho do título das seções */
+  margin-bottom: 10px;
+}
+
+.info-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-section ul li {
+  color: #aaa;
+  font-size: 16px; /* Aumente aqui para o tamanho das informações */
+  margin: 5px 0;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #444;
+  margin: 20px 0;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
