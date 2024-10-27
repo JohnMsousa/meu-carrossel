@@ -7,10 +7,10 @@ const CarouselProduct = () => {
   const [selectedColor, setSelectedColor] = useState(null);
 
   const images = [
-    "../src/img/slide1.png", // Imagem para "red"
-    "../src/img/slide2.png", // Imagem para "orange"
-    "../src/img/slide3.png", // Imagem para "gray"
-    "../src/img/slide4.png", // Imagem para "green"
+    "./../src/img/slide1.png", // Imagem para "red"
+    "./../src/img/slide2.png", // Imagem para "orange"
+    "./../src/img/slide3.png", // Imagem para "gray"
+    "./../src/img/slide4.png", // Imagem para "green"
   ];
 
   const colorToIndexMap = {
