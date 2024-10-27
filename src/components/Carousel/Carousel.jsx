@@ -11,7 +11,7 @@ const products = [
     name: "Queima de estoque Nike 🔥",
     description:
       "Consequat culpa exercitation mollit nisi exceptetur do do tempor laboris eiusmod irure consectetur.",
-    image: "./../src/img/produto1.png",
+    image: "/img/produto1.png",
     buttonText: "Ver Ofertas",
   },
   {
@@ -20,7 +20,7 @@ const products = [
     name: "Queima de estoque Nike 🔥",
     description:
       "Consequat culpa exercitation mollit nisi exceptetur do do tempor laboris eiusmod irure consectetur.",
-    image: "./../src/img/produto1.png",
+    image: "/img/produto1.png",
     buttonText: "Ver Ofertas",
   },
   {
@@ -29,7 +29,7 @@ const products = [
     name: "Queima de estoque Nike 🔥",
     description:
       "Consequat culpa exercitation mollit nisi exceptetur do do tempor laboris eiusmod irure consectetur.",
-    image: "./../src/img/produto1.png",
+    image: "/img/produto1.png",
     buttonText: "Ver Ofertas",
   },
   {
@@ -38,7 +38,7 @@ const products = [
     name: "Queima de estoque Nike 🔥",
     description:
       "Consequat culpa exercitation mollit nisi exceptetur do do tempor laboris eiusmod irure consectetur.",
-    image: "./../src/img/produto1.png",
+    image: "/img/produto1.png",
     buttonText: "Ver Ofertas",
   },
   // Adicione mais produtos conforme necessário
