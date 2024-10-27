@@ -43,6 +43,21 @@ const CarouselProduct = () => {
     setCurrentIndex(colorToIndexMap[color]); // Atualiza o índice do carrossel com base na cor
   };
 
+  const handleBuyClick = () => {
+    if (!selectedSize && !selectedColor) {
+      alert("Selecione um tamanho e uma cor.");
+    } else if (!selectedSize) {
+      alert("Selecione um tamanho.");
+    } else if (!selectedColor) {
+      alert("Selecione uma cor.");
+    } else {
+      alert("Compra realizada com sucesso!");
+      // Reseta os campos selecionados
+      setSelectedSize(null);
+      setSelectedColor(null);
+    }
+  };
+
   return (
     <div className="carousel-container">
       {/* Carousel de imagens */}
@@ -127,7 +142,9 @@ const CarouselProduct = () => {
           </div>
         </div>
 
-        <button className="buy-button">COMPRAR</button>
+        <button className="buy-button" onClick={handleBuyClick}>
+          COMPRAR
+        </button>
       </div>
     </div>
   );
