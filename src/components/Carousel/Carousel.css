@@ -1,7 +1,8 @@
 .carousel-slide {
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Espaço entre texto e imagem */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .carousel-subtitle {
@@ -11,14 +12,14 @@
 }
 
 .carousel-text {
-  max-width: 50%; /* Limita a largura do texto */
+  max-width: 50%;
   margin-bottom: -65px;
 }
 
 .carousel-title {
   margin-top: 10px;
-  font-family: Arial, Helvetica, sans-serif; /* Ou 'Roboto', 'Helvetica' */
-  font-size: 100px; /* Ajuste conforme necessário */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
   font-weight: bold;
   max-width: 800px;
   white-space: normal;
@@ -26,8 +27,8 @@
 
 .carousel-description {
   color: var(--dark-gray-3);
-  font-family: Arial, Helvetica, sans-serif; /* Ou 'Roboto', 'Helvetica' */
-  font-size: 25px; /* Ajuste conforme necessário */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
   max-width: 600px;
   font-weight: normal;
   margin-top: -40px;
@@ -35,58 +36,74 @@
 
 .carousel-button {
   font-size: 22px;
-  padding: 10px 20px; /* Espaço interno do botão */
-  background-color: #d91467; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  border: none; /* Remove bordas */
-  border-radius: 5px; /* Borda arredondada */
-  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  padding: 10px 20px;
+  background-color: #d91467;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .carousel-image img {
-  max-width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 10px; /* Borda arredondada para a imagem */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .swiper-pagination {
-  position: absolute; /* Posiciona as bolinhas de forma absoluta */
-  bottom: 10px; /* Distância do fundo */
-  left: 50%; /* Posiciona à esquerda no meio do slide */
-  display: flex; /* Usa flexbox para alinhar as bolinhas */
-  justify-content: center; /* Centraliza as bolinhas */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
 }
 
 .swiper-pagination-bullet {
-  background: var(--light-gray); /* Cor das bolinhas */
-  opacity: 0.7; /* Opacidade das bolinhas */
-  width: 15px; /* Largura das bolinhas */
-  height: 15px; /* Altura das bolinhas */
-  border-radius: 50%; /* Deixa as bolinhas redondas */
-  margin: 0 5px; /* Espaçamento entre as bolinhas */
+  background: var(--light-gray);
+  opacity: 0.7;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
 .swiper-pagination-bullet-active {
-  background: #d91467; /* Cor da bolinha ativa */
-  opacity: 1; /* Opacidade total da bolinha ativa */
+  background: #d91467;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
   .carousel-slide {
-    flex-direction: column; /* Muda a direção para coluna em telas menores */
-    align-items: center; /* Centraliza os itens */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   .carousel-text {
-    max-width: 100%; /* Permite que o texto ocupe toda a largura em telas menores */
-    text-align: center; /* Centraliza o texto */
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .carousel-title {
+    font-size: 2.5rem;
+  }
+
+  .carousel-description {
+    font-size: 1rem;
   }
 
   .carousel-image {
-    margin-top: 20px; /* Adiciona margem acima da imagem */
+    margin-top: 20px;
+    max-width: 80%;
+  }
+
+  .carousel-button {
+    font-size: 1rem;
   }
 }
 
 .inclined-image {
-  transform: rotate(-20deg); /* Ajuste o ângulo conforme necessário */
+  transform: rotate(-20deg);
 }
