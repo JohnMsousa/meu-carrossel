@@ -151,7 +151,21 @@
   box-shadow: 0 0 0 2px #d91467; /* Borda externa colorida */
 }
 
-.color.red {
+.color {
+  &.red {
+    background-color: red;
+  }
+  &.orange {
+    background-color: orange;
+  }
+  &.gray {
+    background-color: gray;
+  }
+  &.green {
+    background-color: green;
+  }
+}
+/* .color.red {
   background-color: red;
 }
 
@@ -165,7 +179,7 @@
 
 .color.green {
   background-color: green;
-}
+} */
 
 .buy-button {
   width: 40%;
